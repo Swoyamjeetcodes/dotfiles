@@ -1,0 +1,11 @@
+# Cache / compiled
+__pycache__/
+*.pyc
+.cache/
+
+# KDE Connect
+.config/kdeconnect/
+
+# Secrets
+*.pem
+*.key

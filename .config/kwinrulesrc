@@ -1,0 +1,29 @@
+[9c8f6d07-5ee6-43b0-b147-0daa9ef378fe]
+Description=Force Flameshot size
+above=true
+aboverule=2
+fullscreenrule=2
+ignoregeometry=true
+ignoregeometryrule=2
+position=0,0
+positionrule=2
+title=flameshot
+titlematch=1
+types=1
+wmclass=flameshot
+wmclassmatch=1
+
+[General]
+count=2
+rules=d4109579-76ab-4be4-a300-fb7ac2d374da,9c8f6d07-5ee6-43b0-b147-0daa9ef378fe
+
+[d4109579-76ab-4be4-a300-fb7ac2d374da]
+Description=Window settings for discord
+clientmachine=localhost
+noborderrule=3
+title=#survivors | GENSHIN BOYSS - Discord
+types=1
+windowrole=browser-window
+windowrolematch=1
+wmclass=discord
+wmclassmatch=1

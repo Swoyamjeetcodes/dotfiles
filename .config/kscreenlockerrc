@@ -1,0 +1,7 @@
+[Daemon]
+Autolock=false
+Timeout=0
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file:///mnt/Windows/Users/jeet/Pictures/wallpapers/a_car_on_a_wet_road.jpg
+PreviewImage=file:///mnt/Windows/Users/jeet/Pictures/wallpapers/a_car_on_a_wet_road.jpg
