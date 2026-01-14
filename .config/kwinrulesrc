@@ -14,8 +14,18 @@ wmclass=flameshot
 wmclassmatch=1
 
 [General]
-count=2
-rules=d4109579-76ab-4be4-a300-fb7ac2d374da,9c8f6d07-5ee6-43b0-b147-0daa9ef378fe
+count=3
+rules=ac7e19a9-11f9-44ea-ad41-db538cebb9a2,d4109579-76ab-4be4-a300-fb7ac2d374da,9c8f6d07-5ee6-43b0-b147-0daa9ef378fe
+
+[ac7e19a9-11f9-44ea-ad41-db538cebb9a2]
+Description=Window settings for code
+opacityactive=99
+opacityactiverule=2
+title=settings.json - react-course - Visual Studio Code
+titlematch=1
+types=1
+wmclass=code
+wmclassmatch=1
 
 [d4109579-76ab-4be4-a300-fb7ac2d374da]
 Description=Window settings for discord
