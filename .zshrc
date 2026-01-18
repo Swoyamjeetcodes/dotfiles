@@ -107,12 +107,21 @@ source $ZSH/oh-my-zsh.sh
 # Pacman
 alias pss="sudo pacman -Ss"
 alias pi="sudo pacman -S"
+alias pr="sudo pacman -Rns"
 
 # Paru
 alias yss="paru -Ss"
 alias yi="paru -S"
+alias yr="paru -Rns"
+
+
+#update dot files
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
+# wireguard
+alias wgup='sudo wg-quick up arch'
+alias wgdown='sudo wg-quick down arch'
+alias wgstatus='sudo wg show'
 
 
 # Disable starship + fastfetch in VS Code terminal
@@ -142,3 +151,6 @@ warpdown() {
 }
 export EDITOR="code --wait"
 export VISUAL="code --wait"
+# fnm (Fast Node Manager)
+eval "$(fnm env --use-on-cd --shell zsh)"
+

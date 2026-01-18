@@ -1,3 +1,13 @@
+[97037f84-285f-4fca-8fb4-2d99165c69cf]
+Description=Window settings for code
+opacityactive=88
+opacityactiverule=2
+title=image.js - gutenberg - Visual Studio Code
+titlematch=1
+types=1
+wmclass=code
+wmclassmatch=1
+
 [9c8f6d07-5ee6-43b0-b147-0daa9ef378fe]
 Description=Force Flameshot size
 above=true
@@ -14,14 +24,30 @@ wmclass=flameshot
 wmclassmatch=1
 
 [General]
-count=3
-rules=ac7e19a9-11f9-44ea-ad41-db538cebb9a2,d4109579-76ab-4be4-a300-fb7ac2d374da,9c8f6d07-5ee6-43b0-b147-0daa9ef378fe
+count=6
+rules=b306b089-1175-41c8-8e1c-c2a0daaf934a,b6bf7281-8b32-48da-a192-f9d2fc66feb0,97037f84-285f-4fca-8fb4-2d99165c69cf,ac7e19a9-11f9-44ea-ad41-db538cebb9a2,d4109579-76ab-4be4-a300-fb7ac2d374da,9c8f6d07-5ee6-43b0-b147-0daa9ef378fe
 
 [ac7e19a9-11f9-44ea-ad41-db538cebb9a2]
 Description=Window settings for code
 opacityactive=99
 opacityactiverule=2
 title=settings.json - react-course - Visual Studio Code
+titlematch=1
+types=1
+wmclass=code
+wmclassmatch=1
+
+[b306b089-1175-41c8-8e1c-c2a0daaf934a]
+Description=Application settings for code
+opacityactive=94
+opacityactiverule=2
+wmclass=code
+wmclassmatch=1
+
+[b6bf7281-8b32-48da-a192-f9d2fc66feb0]
+Description=Window settings for code
+opacityactiverule=2
+title=Extension: vscode-pets - gutenberg - Visual Studio Code
 titlematch=1
 types=1
 wmclass=code
