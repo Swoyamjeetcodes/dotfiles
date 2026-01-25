@@ -20,5 +20,8 @@ AutoSuspendAction=0
 LidAction=0
 PowerButtonAction=1
 
+[BatteryManagement]
+BatteryCriticalAction=0
+
 [LowBattery][SuspendAndShutdown]
 PowerButtonAction=1

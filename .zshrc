@@ -108,11 +108,13 @@ source $ZSH/oh-my-zsh.sh
 alias pss="sudo pacman -Ss"
 alias pi="sudo pacman -S"
 alias pr="sudo pacman -Rns"
+alias pq="sudo pacman -Q | grep"
 
 # Paru
 alias yss="paru -Ss"
 alias yi="paru -S"
 alias yr="paru -Rns"
+alias yq="paru -Q | grep"
 
 
 #update dot files
@@ -153,4 +155,6 @@ export EDITOR="code --wait"
 export VISUAL="code --wait"
 # fnm (Fast Node Manager)
 eval "$(fnm env --use-on-cd --shell zsh)"
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export PATH="$JAVA_HOME/bin:$PATH"
 
