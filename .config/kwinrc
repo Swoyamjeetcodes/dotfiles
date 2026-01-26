@@ -11,10 +11,8 @@ BlurStrength=2
 NoiseStrength=0
 
 [Plugins]
+blurEnabled=true
 wobblywindowsEnabled=true
-
-[TabBox]
-LayoutName=thumbnail_grid
 
 [Tiling]
 padding=0
