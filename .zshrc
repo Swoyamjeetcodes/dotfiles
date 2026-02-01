@@ -126,11 +126,16 @@ alias wgdown='sudo wg-quick down arch'
 alias wgstatus='sudo wg show'
 
 
-# Disable starship + fastfetch in VS Code terminal
-if [[ "$TERM_PROGRAM" != "vscode" ]]; then
-    eval "$(starship init zsh)"
-    fastfetch
-fi
+# custom functions 
+
+#change work dir using yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 # cloudflare wrap
 warpup() {
     echo "[+] Starting warp-svc..."
@@ -151,10 +156,23 @@ warpdown() {
     sudo warp-cli disconnect
     warp-cli status
 }
+publicip() {
+  curl -s https://ipinfo.io | pp_json
+}
+#exports
+
 export EDITOR="code --wait"
 export VISUAL="code --wait"
 # fnm (Fast Node Manager)
 eval "$(fnm env --use-on-cd --shell zsh)"
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export PATH="$JAVA_HOME/bin:$PATH"
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+source ~/.rvm/scripts/rvm
+# Disable starship + fastfetch in VS Code terminal
+if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+    eval "$(starship init zsh)"
+    fastfetch
+fi
 

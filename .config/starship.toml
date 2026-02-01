@@ -182,6 +182,10 @@ symbol = "󰟔 "
 
 [ruby]
 symbol = " "
+detect_files = ["Gemfile", ".ruby-version"]
+detect_extensions = ["rb"]
+detect_folders = []
+detect_variables = []
 
 [rust]
 symbol = "󱘗 "

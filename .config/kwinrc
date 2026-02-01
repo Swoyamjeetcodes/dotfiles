@@ -45,7 +45,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.78125},{"width":0.2187
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.6692708333333334},{"width":0.33072916666666663}]}
 
 [Tiling][b00aa56d-0dca-4f80-8b0c-e2cab5dc906b][59822b05-6371-456e-a6b3-41e4e023f304]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.7364583333333333},{"width":0.2635416666666667}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5442708333333334},{"width":0.45572916666666663}]}
 
 [Tiling][bb17f991-bc2c-43cb-bf03-2b9bc2487131][1fe47efb-e94f-4fb6-8101-f901404d2520]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -58,3 +58,4 @@ Scale=1
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=SFB
+theme=__aurorae__svg__Sweet-Mars-transparent

@@ -100,7 +100,7 @@ TerminalService=kitty.desktop
 Theme=Tela-light
 
 [KDE]
-LookAndFeelPackage=Ant-Dark
+LookAndFeelPackage=Sweet-Ambar-Blue
 widgetStyle=Breeze
 
 [KFileDialog Settings]
