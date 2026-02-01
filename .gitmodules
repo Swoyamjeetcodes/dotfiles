@@ -1,0 +1,3 @@
+[submodule ".config/yazi/flavors/flexoki-dark.yazi"]
+	path = .config/yazi/flavors/flexoki-dark.yazi
+	url = https://github.com/gosxrgxx/flexoki-dark.yazi.git
