@@ -159,13 +159,64 @@ warpdown() {
 publicip() {
   curl -s https://ipinfo.io | pp_json
 }
+update-mirrors() {
+  echo "🔄 Updating Arch Linux mirrors using reflector..."
+  sudo reflector \
+    --country India,Singapore,Japan \
+    --protocol https \
+    --latest 20 \
+    --sort rate \
+    --save /etc/pacman.d/mirrorlist
+
+  echo "📦 Refreshing pacman database..."
+  sudo pacman -Syy
+
+  echo "✅ Mirrorlist updated successfully!"
+}
+# tailscale toggle
+ts() {
+  # Check if tailscaled service is running
+  if ! systemctl is-active --quiet tailscaled; then
+    echo "Starting tailscaled service..."
+    sudo systemctl start tailscaled
+    sleep 2
+  fi
+
+  # Now check connection state
+  if tailscale status 2>/dev/null | grep -q "Logged out"; then
+    echo "Tailscale is logged out. Logging in..."
+    sudo tailscale up
+    return
+  fi
+
+  if tailscale status >/dev/null 2>&1; then
+    echo "Stopping Tailscale connection..."
+    sudo tailscale down
+    echo "Tailscale disconnected."
+  else
+    echo "Bringing Tailscale up..."
+    sudo tailscale up
+    echo "Tailscale connected."
+  fi
+}
+docker-toggle() {
+  if systemctl is-active --quiet docker; then
+    echo "Docker is running. Stopping..."
+    sudo systemctl stop docker
+  else
+    echo "Docker is not running. Starting..."
+    sudo systemctl start docker
+  fi
+}
+
+
 #exports
 
 export EDITOR="code --wait"
 export VISUAL="code --wait"
 # fnm (Fast Node Manager)
 eval "$(fnm env --use-on-cd --shell zsh)"
-export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
 export PATH="$JAVA_HOME/bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"

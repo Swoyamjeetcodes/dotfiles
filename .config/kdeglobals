@@ -92,6 +92,7 @@ ForegroundVisited=179,13,191
 
 [General]
 BrowserApplication=brave-browser.desktop
+ColorScheme=SweetAmbarBlue
 ColorSchemeHash=f6df0e9f12a4783afd65d81532865d4d86848c5e
 TerminalApplication=kitty
 TerminalService=kitty.desktop
@@ -113,7 +114,7 @@ Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=false
-Sort by=Size
+Sort by=Date
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
