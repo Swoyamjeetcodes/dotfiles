@@ -199,7 +199,7 @@ ts() {
     echo "Tailscale connected."
   fi
 }
-docker-toggle() {
+ds() {
   if systemctl is-active --quiet docker; then
     echo "Docker is running. Stopping..."
     sudo systemctl stop docker
