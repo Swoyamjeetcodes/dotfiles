@@ -116,13 +116,41 @@ alias yi="paru -S"
 alias yr="paru -Rns"
 alias yq="paru -Q | grep"
 
+#check storage
+alias storage="sudo ncdu --exclude /mnt"
 
 #update dot files
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # wireguard
 alias wgup='sudo wg-quick up arch'
-alias wgdown='sudo wg-quick down arch'
+
+wgdown() {
+    echo "=================================="
+    echo "🔻 Stopping WireGuard (arch)..."
+    echo "=================================="
+    sudo wg-quick down arch
+
+    echo
+    echo "=================================="
+    echo "🔄 Updating resolvconf..."
+    echo "=================================="
+    sudo resolvconf -u
+
+    echo
+    echo "=================================="
+    echo "📶 Restarting Wi-Fi..."
+    echo "=================================="
+    nmcli radio wifi off
+    sleep 2
+    nmcli radio wifi on
+
+    echo
+    echo "=================================="
+    echo "✅ WireGuard shutdown and network reset complete."
+    echo "=================================="
+}
+
 alias wgstatus='sudo wg show'
 
 
@@ -200,12 +228,12 @@ ts() {
   fi
 }
 ds() {
-  if systemctl is-active --quiet docker; then
+  if systemctl is-active --quiet docker.service || systemctl is-active --quiet docker.socket; then
     echo "Docker is running. Stopping..."
-    sudo systemctl stop docker
+    sudo systemctl stop docker.service docker.socket
   else
     echo "Docker is not running. Starting..."
-    sudo systemctl start docker
+    sudo systemctl start docker.service
   fi
 }
 
@@ -216,7 +244,7 @@ export EDITOR="code --wait"
 export VISUAL="code --wait"
 # fnm (Fast Node Manager)
 eval "$(fnm env --use-on-cd --shell zsh)"
-export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export PATH="$JAVA_HOME/bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -226,4 +254,9 @@ if [[ "$TERM_PROGRAM" != "vscode" ]]; then
     eval "$(starship init zsh)"
     fastfetch
 fi
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 

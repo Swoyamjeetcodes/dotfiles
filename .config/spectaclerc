@@ -1,14 +1,16 @@
 [Annotations]
 annotationToolType=6
-rectangleFillColor=0,0,0
-textFontColor=255,255,255
+rectangleFillColor=0,0,0,0
+rectangleStrokeColor=170,0,0
+textFont=Noto Sans,20,-1,0,400,0,0,0,0,0,0,0,0,0,0,1
+textFontColor=255,0,0
 
 [General]
 autoSaveImage=true
 clipboardGroup=PostScreenshotCopyImage
 
 [ImageSave]
-lastImageSaveLocation=file:///home/jeet/Pictures/Screenshots/Screenshot_20260224_195435.png
+lastImageSaveLocation=file:///home/jeet/Pictures/Screenshots/Screenshot_20260518_235907.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]

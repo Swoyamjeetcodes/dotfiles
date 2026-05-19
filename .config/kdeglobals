@@ -98,7 +98,7 @@ TerminalApplication=kitty
 TerminalService=kitty.desktop
 
 [Icons]
-Theme=Tela-light
+Theme=WhiteSur-dark
 
 [KDE]
 LookAndFeelPackage=Sweet-Ambar-Blue
