@@ -1,0 +1,7 @@
+[General]
+theme=Default#
+
+[Applications]
+Default%23=dolphin
+MateriaDark=dolphin
+Sweet=dolphin

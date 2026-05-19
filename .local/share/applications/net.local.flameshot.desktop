@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=flameshot gui -r > /tmp/flameshot.png && tesseract /tmp/flameshot.png stdout | xclip -selection clipboard
+Name=OCR
+NoDisplay=true
+StartupNotify=false
+Type=Application
+X-KDE-GlobalAccel-CommandShortcut=true

@@ -9,3 +9,10 @@ __pycache__/
 # Secrets
 *.pem
 *.key
+.config/obs-studio/logs/
+.config/obs-studio/profiler_data/
+.config/obs-studio/basic/profiles/*/service.json
+.config/obs-studio/plugin_config/obs-websocket/config.json
+.config/obs-studio/basic/scenes/*.json
+.config/obs-studio/basic/scenes/*.json.bak
+.config/obs-studio/plugins/

@@ -1,0 +1,88 @@
+{
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.minimap.enabled": false,
+  "git.openRepositoryInParentFolders": "always",
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.formatOnSave": true,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    ".claude/rules": true,
+    "~/.copilot/instructions": true,
+    "~/.claude/rules": true,
+    "C:\\Users\\swoya\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
+    "C:\\Users\\swoya\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true,
+    "C:\\Users\\swoya\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
+    "C:\\Users\\swoya\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
+    "C:\\Users\\swoya\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
+    "C:\\Users\\swoya\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
+    "/tmp/postman-collections-post-response.instructions.md": true,
+    "/tmp/postman-collections-pre-request.instructions.md": true,
+    "/tmp/postman-folder-post-response.instructions.md": true,
+    "/tmp/postman-folder-pre-request.instructions.md": true,
+    "/tmp/postman-http-request-post-response.instructions.md": true,
+    "/tmp/postman-http-request-pre-request.instructions.md": true,
+    "C:\\Users\\jeet\\AppData\\Local\\Temp\\postman-collections-post-response.instructions.md": true,
+    "C:\\Users\\jeet\\AppData\\Local\\Temp\\postman-collections-pre-request.instructions.md": true,
+    "C:\\Users\\jeet\\AppData\\Local\\Temp\\postman-folder-post-response.instructions.md": true,
+    "C:\\Users\\jeet\\AppData\\Local\\Temp\\postman-folder-pre-request.instructions.md": true,
+    "C:\\Users\\jeet\\AppData\\Local\\Temp\\postman-http-request-post-response.instructions.md": true,
+    "C:\\Users\\jeet\\AppData\\Local\\Temp\\postman-http-request-pre-request.instructions.md": true
+  },
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyleInactive": "line",
+  "postman.mcp.notifications.postmanMCP": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "redhat.telemetry.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "chat.agent.maxRequests": 100,
+  "terminal.integrated.fontFamily": "monospace",
+  "editor.fontSize": 15,
+  "terminal.integrated.defaultProfile.osx": "",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.tabSize": 2,
+  "explorer.confirmPasteNative": false,
+  "workbench.colorTheme": "monokai-charcoal (purple)",
+  "chat.editing.confirmEditRequestRemoval": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "material-icon-theme.folders.theme": "specific",
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.menuBarVisibility": "compact",
+  "workbench.activityBar.location": "top",
+  "stardew-pets.background": "Grass (Fall)",
+  "chat.viewSessions.orientation": "stacked",
+  "update.mode": "none",
+  "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-21",
+      "path": "/usr/lib/jvm/java-21-openjdk",
+      "default": true
+    }
+  ],
+  "workbench.editor.enablePreview": false,
+  "chat.tools.terminal.autoApprove": {
+    "git -C /home/jeet/workspace/study/epam/Python/Frontend/responsive-interactive-web": true
+  },
+  "claudeCode.preferredLocation": "panel"
+}
